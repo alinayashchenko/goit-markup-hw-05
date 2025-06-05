@@ -393,7 +393,47 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="subscribe-container">
+                <p class="subscribe-text">Subscribe</p>
+                <div class="footer-elements">
+                    <input class="input-footer" type="text" name="" id="" placeholder="E-mail">
+                    <button class="button-footer">Subscribe
+                        <svg class="icon-telegram" width="32" height="28">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button type="button" class="modal-close">
+                <svg class="icon-cross" width="8" height="8">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+
+            <form class="modal-form" action="">
+                <label class="modal-label" for="">Name</label>
+                <input class="modal-input" type="text" name="" id="">
+
+                <label class="modal-label" for="">Phone</label>
+                <input class="modal-input" type="text" name="" id="">
+
+                <label class="modal-label" for="">Email</label>
+                <input class="modal-input" type="text" name="" id="">
+
+                <label class="modal-label" for="">Comment</label>
+                <textarea class="modal-textarea" name="" id="" placeholder="Text input"></textarea>
+            </form>
+            
+            <button type="submit" class="button-submit">Send</button>
+        </div>
+    </div>
 </body>
 </html>
