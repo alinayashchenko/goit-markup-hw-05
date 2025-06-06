@@ -399,8 +399,7 @@
                 <form class="subscribe-form">
                     <label class="label">
                         <input class="input-footer" type="email" name="email" placeholder="E-mail">
-                    </label>
-                
+                    </label>               
                     <button class="button-footer" type="submit">Subscribe
                         <svg class="icon-telegram" width="24" height="24">
                             <use href="./images/icons.svg#icon-telegram"></use>
@@ -408,26 +407,23 @@
                     </button>
                 </form>
             </div>
-            
-
         </div>
     </footer>
 
-    <div class="backdrop">
-        <div class="modal">
-            <button type="button" class="modal-close">
-                <svg class="icon-cross" width="8" height="8">
-                    <use href="./images/icons.svg#icon-cross"></use>
-                </svg>
-            </button>
-            
+    <div class="backdrop is-open">
+        <div class="modal">           
             <p class="modal-text">Leave your contacts and we will call you back</p>
-
             <form class="modal-form">
+                <button type="button" class="modal-close">
+                    <svg class="icon-cross" width="8" height="8">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+
                 <div class="modal-container">
-                    <label class="modal-label" for="name">Name</label>
+                    <label class="modal-label" for="user-name">Name</label>
                     <div class="modal-input-container">
-                        <input class="modal-input" type="text" name="name" id="name">
+                        <input class="modal-input" type="text" name="user-name" id="user-name">
                         <svg class="icon-form" width="18" height="24">
                             <use href="./images/icons.svg#icon-name"></use>
                         </svg>
@@ -454,8 +450,10 @@
                     </div>
                 </div>
 
-                <label class="modal-label" for="text">Comment</label>
-                <textarea class="modal-textarea" name="textarea" id="text" placeholder="Text input"></textarea>
+                <div class="textarea-container">
+                    <label class="modal-label" for="user-comment">Comment</label>
+                    <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+                </div>
                 
                 <div class="check-container">
                     <input class="checkbox-field visually-hidden" type="checkbox" name="policy" id="policy" value="accept">
@@ -467,9 +465,8 @@
                         </span>I accept the terms and conditions of the&nbsp;<a class="label-link" href="">Privacy Policy</a></label>
                 </div>
                 
+                <button type="submit" class="button-submit">Send</button>
             </form>
-            
-            <button type="submit" class="button-submit">Send</button>
         </div>
     </div>
 </body>
