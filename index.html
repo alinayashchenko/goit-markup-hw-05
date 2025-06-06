@@ -394,21 +394,22 @@
                 </ul>
             </div>
 
-            <div class="subscribe-container">
-                <p class="subscribe-text">Subscribe</p>
-                <div class="footer-elements">
-                    <input class="input-footer" type="text" name="" id="" placeholder="E-mail">
-                    <button class="button-footer">Subscribe
-                        <svg class="icon-telegram" width="32" height="30">
-                            <use href="./images/icons.svg#icon-telegram"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            <form class="subscribe-form">
+                <label class="subscribe-text">Subscribe
+                    <input class="input-footer" type="email" name="email" placeholder="E-mail">
+                </label>
+                
+                <button class="button-footer" type="submit">Subscribe
+                    <svg class="icon-telegram" width="24" height="24">
+                        <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </form>
+
         </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
             <button type="button" class="modal-close">
                 <svg class="icon-cross" width="8" height="8">
@@ -449,8 +450,8 @@
                     </div>
                 </div>
 
-                <label class="modal-label" for="">Comment</label>
-                <textarea class="modal-textarea" name="" id="" placeholder="Text input"></textarea>
+                <label class="modal-label" for="text">Comment</label>
+                <textarea class="modal-textarea" name="textarea" id="text" placeholder="Text input"></textarea>
                 
                 <div class="check-container">
                     <input class="checkbox-field visually-hidden" type="checkbox" name="policy" id="policy" value="accept">
@@ -459,7 +460,7 @@
                             <svg class="icon-check" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the&nbsp<a class="label-link" href="">Privacy Policy</a></label>
+                        </span>I accept the terms and conditions of the&nbsp;<a class="label-link" href="">Privacy Policy</a></label>
                 </div>
                 
             </form>
