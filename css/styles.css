@@ -445,10 +445,13 @@ h6 {
     background-color: #31d0aa;
 }
 
+.form-container {
+    margin-left: 80px;
+}
+
 .subscribe-form {
     display: flex;
     gap: 24px;
-    margin-left: 80px;
     align-items: flex-end;
 }
 
@@ -458,6 +461,7 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .input-footer {
@@ -472,7 +476,6 @@ h6 {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     color: #ffffff;
     padding-left: 16px;
-    margin-top: 16px;
 }
 
 input::placeholder {
